@@ -1,13 +1,42 @@
+/**
+ * Global styles file like App.css or index.css
+ *
+ * @format
+ */
+
+/* Customizes the whole scrollbar */
+::-webkit-scrollbar {
+	width: 12px; /* or 'width: 12px;' for horizontal scroll */
+	height: 12px; /* For horizontal scrolling */
+}
+
+/* Customizes the track */
+::-webkit-scrollbar-track {
+	background: #f0f0f0;
+	border-radius: 7px;
+}
+
+/* Customizes the thumb */
+::-webkit-scrollbar-thumb {
+	background: #c1c1c1;
+	border-radius: 6px;
+}
+
+/* Thumb hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #f4ce14;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }

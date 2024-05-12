@@ -1,0 +1,90 @@
+/**
+ * Header.css
+ *
+ * @format
+ */
+
+.main-container {
+	background-color: #495e57;
+	max-height: 50vh;
+	margin: auto auto 3rem auto;
+}
+
+.header-container {
+	display: flex;
+	align-items: center; /* Updated to center align items vertically */
+	justify-content: space-between; /* Updated to space between for better alignment of items */
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 50vh;
+	position: relative;
+	width: 66%;
+}
+
+.header-content {
+	width: 100%;
+	padding: 15px;
+}
+
+.header-content p {
+	text-overflow: ellipsis;
+	white-space: wrap; /* Adjusted for text overflow */
+	/* overflow: hidden; */
+	line-height: 1.5;
+	color: #edefee;
+	width: 100%;
+}
+
+.header-content h1 {
+	margin-bottom: 0;
+	color: #f4ce14;
+}
+.header-content h2 {
+	margin-bottom: 1rem;
+	margin-top: 0;
+	color: #edefee;
+}
+
+.header-image {
+	width: 100%; /* Responsive width */
+	height: auto; /* Adjust height to auto for responsiveness */
+	position: relative;
+	z-index: 9999;
+	left: 12rem;
+	top: 3rem;
+}
+.header-image img {
+	width: 50%; /* Full width on smaller screens */
+	object-fit: cover;
+	border-radius: 20px;
+	margin-top: 2.5rem;
+}
+
+button {
+	display: block;
+	margin-top: 1rem;
+	width: auto; /* Button width auto for full-width on smaller screens */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+	.header-container {
+		flex-direction: column; /* Stack items vertically on smaller screens */
+		height: auto; /* Flexible height */
+		width: 90%; /* Increase width to 90% on smaller screens */
+		max-height: auto;
+	}
+
+	.header-content,
+	.header-image {
+		width: 100%; /* Full width for content and image */
+		left: 0;
+		display: block;
+	}
+
+
+	.header-content p {
+		white-space: normal; /* Allow normal text flow */
+		text-overflow: clip; /* Adjust text-overflow */
+	}
+}

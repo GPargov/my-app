@@ -1,13 +1,15 @@
 /** @format */
 
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 
-import "../css/header.css";
+import "../css/CallToAction.css";
 
 import restaurantfood from "../assets/restauranfood.jpg";
 
 function Header() {
+	const navigate = useNavigate();
 	return (
 		<div className="main-container">
 			<div className="header-container">
@@ -28,8 +30,9 @@ function Header() {
 							color: "#333333",
 							fontWeight: "700",
 							borderRadius: "7px",
-						}}>
-						Reserve a table
+						}}
+						onClick={() => navigate("/bookings")}>
+						Book a table
 					</Button>
 				</div>
 				<div className="header-image">
