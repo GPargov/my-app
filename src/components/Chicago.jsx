@@ -1,13 +1,11 @@
 /** @format */
 
 import React from "react";
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Mario_and_Adrian_A from "../assets/Mario and Adrian A.jpg";
 import Mario_and_Adrian_B from "../assets/Mario and Adrian b.jpg";
 
 const Chicago = () => {
-	const theme = useTheme();
-
 	return (
 		<Box
 			id="about"

@@ -17,10 +17,8 @@ const CustomersSayCard = ({
 	customerName,
 	testimonial,
 }) => {
-	// State to manage the expanded/collapsed state of the testimonial
 	const [isExpanded, setIsExpanded] = useState(false);
 
-	// Function to toggle the expanded state
 	const handleExpandClick = () => {
 		setIsExpanded(!isExpanded);
 	};

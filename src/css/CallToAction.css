@@ -12,8 +12,8 @@
 
 .header-container {
 	display: flex;
-	align-items: center; /* Updated to center align items vertically */
-	justify-content: space-between; /* Updated to space between for better alignment of items */
+	align-items: center;
+	justify-content: space-between;
 	max-width: 1200px;
 	margin: 0 auto;
 	height: 50vh;
@@ -28,7 +28,7 @@
 
 .header-content p {
 	text-overflow: ellipsis;
-	white-space: wrap; /* Adjusted for text overflow */
+	white-space: wrap;
 	/* overflow: hidden; */
 	line-height: 1.5;
 	color: #edefee;
@@ -46,15 +46,15 @@
 }
 
 .header-image {
-	width: 100%; /* Responsive width */
-	height: auto; /* Adjust height to auto for responsiveness */
+	width: 100%;
+	height: auto;
 	position: relative;
 	z-index: 9999;
 	left: 12rem;
 	top: 3rem;
 }
 .header-image img {
-	width: 50%; /* Full width on smaller screens */
+	width: 50%;
 	object-fit: cover;
 	border-radius: 20px;
 	margin-top: 2.5rem;
@@ -63,28 +63,27 @@
 button {
 	display: block;
 	margin-top: 1rem;
-	width: auto; /* Button width auto for full-width on smaller screens */
+	width: auto;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
 	.header-container {
-		flex-direction: column; /* Stack items vertically on smaller screens */
-		height: auto; /* Flexible height */
-		width: 90%; /* Increase width to 90% on smaller screens */
+		flex-direction: column;
+		height: auto;
+		width: 90%;
 		max-height: auto;
 	}
 
 	.header-content,
 	.header-image {
-		width: 100%; /* Full width for content and image */
+		width: 100%;
 		left: 0;
 		display: block;
 	}
 
-
 	.header-content p {
-		white-space: normal; /* Allow normal text flow */
-		text-overflow: clip; /* Adjust text-overflow */
+		white-space: normal;
+		text-overflow: clip;
 	}
 }

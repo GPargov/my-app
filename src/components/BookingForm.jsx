@@ -38,7 +38,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
 				.required("Occasion is required"),
 		}),
 		onSubmit: (values) => {
-			const response = true; // Simulate an API call response
+			const response = true; //API call response
 			if (response) {
 				localStorage.setItem("Bookings", JSON.stringify(values));
 				// console.log(values);

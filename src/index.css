@@ -4,25 +4,21 @@
  * @format
  */
 
-/* Customizes the whole scrollbar */
 ::-webkit-scrollbar {
-	width: 12px; /* or 'width: 12px;' for horizontal scroll */
-	height: 12px; /* For horizontal scrolling */
+	width: 12px;
+	height: 12px;
 }
 
-/* Customizes the track */
 ::-webkit-scrollbar-track {
 	background: #f0f0f0;
 	border-radius: 7px;
 }
 
-/* Customizes the thumb */
 ::-webkit-scrollbar-thumb {
 	background: #c1c1c1;
 	border-radius: 6px;
 }
 
-/* Thumb hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #f4ce14;
 }
